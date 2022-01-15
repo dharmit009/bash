@@ -93,9 +93,14 @@ unalias c="clear"
 ## Logical Operation Syntax: 
 
 -eq -> equal to 
+
 -ne -> not equal to 
+
 -lt -> less then 
+
 -le -> less then equal
+
 -gt -> greater then
+
 -ge -> greater then equal
 
