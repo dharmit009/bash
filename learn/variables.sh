@@ -1,7 +1,13 @@
 #!/bin/bash
 
+
 ## VARIABLES: 
+
+mess="Variables are states in the memory. Just like us humans we are
+just state machines."
+
 echo "Variables: "
+echo $mess
 
 ## NOTE: NO spaces between variable names and value. 
 
