@@ -14,9 +14,3 @@ else
   echo "Test folder not found."; 
 fi 
 
-
-
-
-
-
-

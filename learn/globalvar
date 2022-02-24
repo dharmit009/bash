@@ -1,0 +1,15 @@
+#!/bin/sh 
+
+
+greet(){
+  name="$1";
+  another
+  echo "Hello $name!";
+}
+
+another(){
+  name="Doris";
+  echo "Hello $name!";
+}
+
+greet Rob

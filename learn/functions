@@ -1,5 +1,8 @@
 #!/bin/sh 
 
+# Both of them are procedures as they don't have return values.
+# As posix does not function as it keywords mall the functions can be
+# called as procedures. 
 say_hello(){
 	echo "Hello"
 	echo "How are you?"

@@ -1,0 +1,11 @@
+#!/bin/sh
+
+SCRIPT_REPO=$HOME"/repos/scripts/"
+FILENAME=$SCRIPT_REPO$1
+
+if [ -e "$FILENAME" ];
+then 
+	echo "$FILENAME exists!"
+else
+	echo "$FILENAME does not exists!"
+fi 

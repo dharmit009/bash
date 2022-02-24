@@ -12,7 +12,7 @@ Here is an small example:
 Write this code and run it ...  
 
 > a=1
-> echo $a
+> echo \$a
 
 **Output:**
 
@@ -26,4 +26,4 @@ which returned it's value back. This is only how much you would have
 probably thought. But here is the thing you read the output through your
 eyes your brain interpreted it and state of your brain memory changed too. 
 
-Thats so amazing isn't it ?
+That's so amazing isn't it ?

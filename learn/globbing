@@ -1,0 +1,8 @@
+#!/bin/sh 
+
+## By putting the "" we make it literal 
+mess="-n hello"
+echo Without Quotation: 
+echo $mess
+echo "With Quotation:"
+echo "$mess"

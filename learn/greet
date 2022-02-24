@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo 'This is a literal string.'
+echo "This is a literal string created using ''."
