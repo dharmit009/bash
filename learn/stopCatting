@@ -1,0 +1,55 @@
+#!/bin/sh
+
+# Here is why you need to stop using cat ...
+# One of the biggest problems of using cat is that it is sub shell
+# program meaning it launches new instance and then runs the code. 
+# which has it own set of problems. For example if you do a cat $file
+# then you | it to tr to translate all your whitespace to '\n' your
+# process tree would look something like this ...
+# 
+# bash
+#  |-- cat $(file)
+#       |-- tr ' ' '\n'
+
+# Now this is not the best practice in general as this causes to have
+# overhead on your system plus it's not the best practice in terms of
+# security. 
+
+# Here is a nice small example of why you should not use cat in your
+# shell scripts or any other subshell program for that matter. 
+
+# Let's us consider a file with some content in it. 
+# Here I am use a plain text file known as `foo`
+# with the following contents ...
+# 
+# <-- foo -->
+# some 
+# thing 
+# here 
+# <-- EOF --> 
+
+# Now let us use conter to counter the number of lines within the file.
+
+
+counter=0
+
+echo ""
+echo "Output Using Cat: "
+cat foo | while read line; do 
+  echo "$counter: $line"
+  (( counter ++))
+done 
+echo "The Value of Count Should Be Equal to 3"
+echo "Count: $counter"
+
+counter2=0
+echo ""
+echo "Output Using < Here Operator: "
+while read line; do 
+  echo "$counter2: $line"
+  (( counter2++))
+done < foo
+echo "The Value of Count Should Be Equal to 3"
+echo "Count: $counter2"
+
+

@@ -9,6 +9,7 @@
 
 name='hmm'
 
+# always use [[ ]]
 if [ "$name" = hmm ];
 then 
 	echo "### Owner is back !!! ###"

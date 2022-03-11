@@ -1,0 +1,5 @@
+#!/bin/sh 
+
+counter=1
+echo "Hello World, $counter"
+printf "Hello World, %s\n" "$counter"

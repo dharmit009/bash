@@ -1,0 +1,23 @@
+#!/usr/bin/env bash 
+
+# What is parameter expansion?
+# This technique allows for a variable to be assigned a value if another
+# variable is either empty or is undefined.
+# 
+# Here is the notation of the same:
+# `${variableName:-value}`
+# 
+# The above line means if value for variable is null then set it the
+# given value. 
+
+# Let us see an example ... 
+
+name="$1"
+echo "${name:-'Please Provide a NAME as an argument'}"
+
+if [[ -z "$1" ]];
+then 
+  echo "Now try running the script with parameter"
+else [[ -n "$1" ]]
+  echo "Now try running the script without any parameter"
+fi 

@@ -1,0 +1,24 @@
+#!/bin/sh 
+
+# Why use read -r 
+# > The -r in read command will also take input for \n where as the
+# read without -r will not return backslashes ...
+
+printf "Enter a sentence with \\ n's: ";
+read sentence
+printf "%s\n" "$sentence"
+
+printf "\nEnter a sentence again with \\ n's: ";
+read -r sentence
+
+printf "%s\n" "$sentence"
+
+# read without any switches. 
+##
+## Enter a sentence with \ n's: 
+## this is the test n function
+
+# read with -r:
+##
+## Enter a sentence again with \ n's: 
+## this is the test \n function

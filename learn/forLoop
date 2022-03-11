@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# for VAR in $();
+# do
+# 	statements; 
+# done 
+
+# for x in $({1..10});
+# do 
+# 	echo "x: $x" 
+# done
+
+# for x in $(cat output.txt);
+# do
+# 	echo -e "$x\n"
+# done
+
+for x in {1..100};
+do 
+  printf "%d, " "$x"
+done
+printf "\n"
+
+
+printf "a[] = ["
+for x in {5..100}; do
+printf " %d," "$x"
+done; 
+printf "]"
