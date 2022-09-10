@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-## VARIABLES: 
+## VARIABLES:
 
 mess="Variables are states in the memory. Just like us humans we are
 just state machines."

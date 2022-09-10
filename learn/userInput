@@ -13,12 +13,12 @@ read -r sentence
 
 printf "%s\n" "$sentence"
 
-# read without any switches. 
+# read without any switches.
 ##
-## Enter a sentence with \ n's: 
+## Enter a sentence with \ n's:
 ## this is the test n function
 
 # read with -r:
 ##
-## Enter a sentence again with \ n's: 
+## Enter a sentence again with \ n's:
 ## this is the test \n function
